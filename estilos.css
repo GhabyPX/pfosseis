@@ -87,14 +87,26 @@
         }
         
 
+/*contrução*/
+        .construction-container {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+            font-size: large;
+        }
+
+
         /* Conteúdo da página */
         .content-section {
             padding: 4rem 0;
-            min-height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        
+
         .content-section:nth-child(odd) {
-            background-color: #f0f0f0;
+            background-color: #eceaea;
         }
         
         .section-title {
@@ -102,14 +114,66 @@
             font-weight: 700;
             margin-bottom: 2rem;
             color: #333;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            text-align: left;
+            box-shadow: #080808 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+            box-shadow: #080808 0px 10px 20px rgba(0, 0, 0, 0.1);
         }
         
-        /* Offset para compensar navbar fixa */
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
         .navbar-offset {
             margin-top: 0;
             transition: margin-top 0.3s ease;
         }
         
         .navbar-offset.offset-active {
-            margin-top: 76px; /* Altura aproximada da navbar */
+            margin-top: 50px; 
         }
+
+        /* Rodapé */
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: center; 
+        padding: 20px;
+        gap: 10px; 
+        background: #dfdfdf;
+    }
+
+    .footer-logo-left {
+        justify-self: start; 
+        max-height: 60px; 
+    }
+
+    .footer-logo-right {
+        justify-self: end;
+        max-height: 70px;
+    }
+
+    .footer-text {
+        grid-column: 1 / -1; 
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-text p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #1f1f1f;
+    }
