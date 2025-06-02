@@ -1,0 +1,115 @@
+ /* Header com imagem de fundo */
+        .header-section {
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/fundo.png);
+            width: 100%;
+            height:auto;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+        
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: #2e2d2d;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #3bd100 !important;
+            font-style: italic;
+             position: relative;
+        }
+        
+        .navbar-custom.navbar-scrolled {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        
+        .navbar-custom .navbar-nav .nav-link {
+            color: #dfdfdf;
+            font-weight: 500;
+            padding: 0.8rem 1rem;
+            transition: color 0.3s;
+        }
+        
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #667eea;
+        }
+        
+        .navbar-custom .navbar-brand {
+            font-weight: 700;
+            color: #ececec;
+        }
+
+        .navbar-toggler {
+
+            border-color: #ffffff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+
+        /* Conteúdo da página */
+        .content-section {
+            padding: 4rem 0;
+            min-height: 100vh;
+        }
+        
+        .content-section:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        /* Offset para compensar navbar fixa */
+        .navbar-offset {
+            margin-top: 0;
+            transition: margin-top 0.3s ease;
+        }
+        
+        .navbar-offset.offset-active {
+            margin-top: 76px; /* Altura aproximada da navbar */
+        }
