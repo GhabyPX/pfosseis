@@ -36,7 +36,7 @@
                         <a class="nav-link" href="home.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fotos1.html">Galeria de Fotos</a>
+                        <a class="nav-link active" href="fotos1.html">Galeria de Fotos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fotos.html">Galeria Paleobotânica</a>
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="atividades.html">Atividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="curiosidades.html">Curiosidades</a>
+                        <a class="nav-link" href="curiosidades.html">Curiosidades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="equipe.html">A Equipe</a>
@@ -59,14 +59,42 @@
         <!-- Seção Início -->
         <section id="home" class="content-section">
             <div class="container">
-                <h2 class="section-title">CURIOSIDADES</h2>
+                <h2 class="section-title">GALERIA DE FOTOS</h2>
+                <p class="lead"></p>
             </div>
         </section>
 
- <div class="construction-container">
+<div class="construction-container">
     <h1>🚧 Em Construção</h1>
     <p>Volte em breve para novidades!</p>
 </div>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
 <footer class="footer-grid">
